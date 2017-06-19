@@ -3,11 +3,18 @@ import PropTypes from 'prop-types';
 
 const Name = ({person}) => 
     (
-        <p>My name is {person.name} and my favourite colour is {person.favouriteColour}</p>
+        <div>
+            <p>My name is {person.name} and my favourite colour is {person.favouriteColour}</p>
+            <p>And I'm the ripe old age of {person.age}</p>
+        </div>
     );
 
 Name.propTypes = {
-    person: PropTypes.objectOf(PropTypes.string).isRequired
+    person: PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        favouriteColour: PropTypes.string.isRequired,
+        age: PropTypes.number.isRequired
+    }).isRequired
 };
 
 export default Name;
