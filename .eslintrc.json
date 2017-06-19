@@ -22,6 +22,7 @@
         "valid-typeof": "warn"
     },
     "plugins": [
-        "react"
+        "react",
+        "jest"
     ]
 }
