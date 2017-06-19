@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) and then built up from Jack Franklin's [interactive workshop](http://interactive-react.herokuapp.com) example. I've updated the examples to the latest ES6 and Stateless functional Componenets when possible.
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) and then built up from Jack Franklin's [interactive workshop](http://interactive-react.herokuapp.com) example. I've updated the examples to the latest ES6 and Stateless functional components when possible.
 
 ## Here follows the original documentation for [Create React App](https://github.com/facebookincubator/create-react-app)
 
