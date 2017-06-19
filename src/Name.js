@@ -5,7 +5,7 @@ const Name = ({person}) =>
     (
         <div>
             <p>My name is {person.name} and my favourite colour is {person.favouriteColour}</p>
-            <p>And I'm the ripe old age of {person.age}</p>
+            <p>And I&apos;m the ripe old age of {person.age}</p>
         </div>
     );
 

@@ -5,7 +5,7 @@ const FavouriteMovies = ({movies}) =>
     {
         
         const movieitems = movies.map((movie) =>
-            <li key={movie.name}>Movie title: "{movie.name}", my rating is: {movie.rating} out of 5</li>
+            <li key={movie.name}>Movie title: &quot;{movie.name}&quot;, my rating is: {movie.rating} out of 5</li>
         );
 
         return (
