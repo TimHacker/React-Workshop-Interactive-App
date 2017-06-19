@@ -1,4 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+# Interactive React using Create React App
+
+## Introduction
+
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) and then built up from Jack Franklin's [interactive workshop](http://interactive-react.herokuapp.com) example. I've updated the examples to the latest ES6 and Stateless functional Componenets when possible.
+
+## Here follows the original documentation for [Create React App](https://github.com/facebookincubator/create-react-app)
 
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
