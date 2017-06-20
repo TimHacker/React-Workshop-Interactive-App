@@ -11,7 +11,11 @@
         },
         "sourceType": "module"
     },
-    "extends": ["eslint:recommended", "plugin:react/recommended"],
+    "extends": [
+        "eslint:recommended", 
+        "plugin:react/recommended",
+        "airbnb"
+    ],
     "rules": {
         "no-const-assign": "warn",
         "no-this-before-super": "warn",
