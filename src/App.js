@@ -8,16 +8,13 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
-
-
   render() {
-
     const movieList = [
-      {name: "LOTR", rating: 5},
-      {name: "Star Wars", rating: 5},
-      {name: "Iron Man", rating: 4},
-      {name: "The worse", rating: 0}
-    ]
+      { name: 'LOTR', rating: 5 },
+      { name: 'Star Wars', rating: 5 },
+      { name: 'Iron Man', rating: 4 },
+      { name: 'The worse', rating: 0 },
+    ];
 
     return (
       <div className="App">
@@ -27,7 +24,7 @@ class App extends Component {
         </p>
         <div>
           <h3>Custom Name Component:</h3>
-          <Name person={{name: "Tim", age: 27, favouriteColour: "Blue"}} />
+          <Name person={{ name: 'Tim', age: 27, favouriteColour: 'Blue' }} />
         </div>
         <FavouriteMovies movies={movieList} />
       </div>
