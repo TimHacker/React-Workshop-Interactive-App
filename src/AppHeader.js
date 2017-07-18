@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Name = ({ logo }) =>
+const AppHeader = ({ logo }) =>
   (
     <div className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
@@ -9,8 +9,8 @@ const Name = ({ logo }) =>
     </div>
   );
 
-Name.propTypes = {
+AppHeader.propTypes = {
   logo: PropTypes.string.isRequired,
 };
 
-export default Name;
+export default AppHeader;
