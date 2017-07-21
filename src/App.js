@@ -27,7 +27,7 @@ const App = () => {
         <Name person={{ name: 'Tim', age: 27, favouriteColour: 'Blue' }} />
       </div>
       <FavouriteMovies movies={movieList} />
-      <Counter />
+      <Counter initialValue={1} />
     </div>
   );
 };

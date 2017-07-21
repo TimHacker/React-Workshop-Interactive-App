@@ -1,11 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class Counter extends React.Component {
-
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      count: 0,
+      count: this.props.initialValue || 0,
     };
   }
 
@@ -18,7 +18,7 @@ class Counter extends React.Component {
   }
 
   resetCount() {
-    this.setState({ count: 0 });
+    this.setState({ count: this.props.initialValue });
   }
 
   render() {
@@ -32,7 +32,12 @@ class Counter extends React.Component {
       </div>
     );
   }
-
 }
+
+Counter.propTypes = {
+  initialValue: PropTypes
+    .number
+    .isRequired,
+};
 
 export default Counter;
