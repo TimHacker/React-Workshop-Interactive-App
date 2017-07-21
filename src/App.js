@@ -4,6 +4,7 @@ import AppHeader from './AppHeader';
 import Name from './Name';
 import FavouriteMovies from './FavouriteMovies';
 import Counter from './Counter';
+import Form from './Form';
 
 import logo from './logo.svg';
 import './App.css';
@@ -28,6 +29,7 @@ const App = () => {
       </div>
       <FavouriteMovies movies={movieList} />
       <Counter initialValue={1} />
+      <Form />
     </div>
   );
 };
