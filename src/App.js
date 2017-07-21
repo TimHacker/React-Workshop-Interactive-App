@@ -3,6 +3,7 @@ import React from 'react';
 import AppHeader from './AppHeader';
 import Name from './Name';
 import FavouriteMovies from './FavouriteMovies';
+import Counter from './Counter';
 
 import logo from './logo.svg';
 import './App.css';
@@ -26,6 +27,7 @@ const App = () => {
         <Name person={{ name: 'Tim', age: 27, favouriteColour: 'Blue' }} />
       </div>
       <FavouriteMovies movies={movieList} />
+      <Counter />
     </div>
   );
 };
