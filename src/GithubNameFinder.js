@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-class GithubNames extends React.Component {
+class GithubNameFinder extends React.Component {
 
   constructor(props) {
     super(props);
@@ -9,7 +10,7 @@ class GithubNames extends React.Component {
   }
 
   componentWillMount() {
-    this.searchForUser('timhacker');
+    this.searchForUser(this.props.username);
   }
 
   getGitHubUser(name) {
@@ -35,4 +36,10 @@ class GithubNames extends React.Component {
   }
 }
 
-export default GithubNames;
+GithubNameFinder.propTypes = {
+  username: PropTypes
+    .string
+    .isRequired,
+};
+
+export default GithubNameFinder;
