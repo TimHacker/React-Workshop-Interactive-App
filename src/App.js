@@ -5,6 +5,7 @@ import Name from './Name';
 import FavouriteMovies from './FavouriteMovies';
 import Counter from './Counter';
 import Form from './Form';
+import GithubNames from './GithubNames';
 
 import logo from './logo.svg';
 import './App.css';
@@ -30,6 +31,7 @@ const App = () => {
       <FavouriteMovies movies={movieList} />
       <Counter initialValue={1} />
       <Form />
+      <GithubNames />
     </div>
   );
 };
