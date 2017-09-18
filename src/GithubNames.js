@@ -8,6 +8,10 @@ class GithubNames extends React.Component {
     this.state = { name: '' };
   }
 
+  componentWillMount() {
+    this.searchForUser('timhacker');
+  }
+
   getGitHubUser(name) {
     return fetch(`http://github-proxy-api.herokuapp.com/users/${name}`)
       .then(data => data.json());
