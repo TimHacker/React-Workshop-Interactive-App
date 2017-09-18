@@ -31,13 +31,7 @@ class GithubNameFinder extends React.Component {
         <h2>Find a github user&apos;s full name</h2>
         <input type="text" ref={(c) => { this.textInput = c; }} />
         <button onClick={() => this.searchForUser(this.textInput.value)}>Search</button>
-
-        {!this.state.isLoading &&
-          <div>Full name: { this.state.name }</div>
-        }
-        {this.state.isLoading &&
-          <div>LOADING...</div>
-        }
+        <div>{this.state.isLoading ? 'LOADING...' : `Full name: ${this.state.name}`}</div>
       </div>
     );
   }
