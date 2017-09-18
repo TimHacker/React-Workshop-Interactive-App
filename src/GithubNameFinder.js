@@ -6,7 +6,7 @@ class GithubNameFinder extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { name: '' };
+    this.state = { name: '', isLoading: false };
   }
 
   componentWillMount() {
@@ -19,8 +19,9 @@ class GithubNameFinder extends React.Component {
   }
 
   searchForUser(name) {
+    this.setState({ isLoading: true });
     this.getGitHubUser(name).then((info) => {
-      this.setState({ name: info.name });
+      this.setState({ name: info.name, isLoading: false });
     });
   }
 
@@ -30,7 +31,13 @@ class GithubNameFinder extends React.Component {
         <h2>Find a github user&apos;s full name</h2>
         <input type="text" ref={(c) => { this.textInput = c; }} />
         <button onClick={() => this.searchForUser(this.textInput.value)}>Search</button>
-        <div>Full name: { this.state.name }</div>
+
+        {!this.state.isLoading &&
+          <div>Full name: { this.state.name }</div>
+        }
+        {this.state.isLoading &&
+          <div>LOADING...</div>
+        }
       </div>
     );
   }
